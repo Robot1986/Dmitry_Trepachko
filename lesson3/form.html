@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <h2>Простая форма поиска с вариантами</h2>
+        <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: left">
+            <fieldset >
+                <legend>Строка поиска</legend>
+                <input type="search" name="scr">
+                <input type="submit" value="Искать"><br>
+                <label><input type="radio" name="radio_group" value="na_site" id="radio_button1" checked>на сайте</label>
+                <label><input type="radio" name="radio_group" value="in_google" id="radio_button2">в google</label>
+            </fieldset>
+        </form>
+   <h2 style="float: right">Простая форма поиска с вариантами</h2>
+         <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
+            <fieldset >
+                <legend>Строка поиска</legend>
+                <input type="search" name="scr1" placeholder="" required checked>
+                <input type="submit" value="Искать"><br>
+                <label><input type="radio" name="radio_group" value="na_site" id="radio_button3">на сайте</label>
+                <label><input type="radio" name="radio_group" value="in_google" id="radio_button4" checked>в google</label>
+            </fieldset>
+        </form>
+
+</body>
+</html>
