@@ -14,17 +14,96 @@
                 <label><input type="radio" name="radio_group" value="na_site" id="radio_button1" checked>на сайте</label>
                 <label><input type="radio" name="radio_group" value="in_google" id="radio_button2">в google</label>
             </fieldset>
-        </form>
-   <h2 style="float: right">Простая форма поиска с вариантами</h2>
-         <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
-            <fieldset >
-                <legend>Строка поиска</legend>
-                <input type="search" name="scr1" placeholder="" required checked>
-                <input type="submit" value="Искать"><br>
-                <label><input type="radio" name="radio_group" value="na_site" id="radio_button3">на сайте</label>
-                <label><input type="radio" name="radio_group" value="in_google" id="radio_button4" checked>в google</label>
-            </fieldset>
-        </form>
-
+        </form><br>
+    <h2 align="right">Простая форма поиска с вариантами</h2>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
+        <fieldset >
+            <legend>Строка поиска</legend>
+            <label for="src1"></label>
+            <input type="search" autofocus id="src1" name="scr1" required>
+            <input type="submit" value="Искать"><br>
+            <label><input type="radio" name="radio_group" value="na_site" id="radio_button3">на сайте</label>
+            <label><input type="radio" name="radio_group" value="in_google" id="radio_button4" checked>в google</label>
+        </fieldset>
+    </form><br>
+    <h2>Простая форма авторизации</h2>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: left">
+        <fieldset >
+            <legend>Авторизуйтесь</legend>
+            <p>
+                <input type="text" name="login" required><label>Логин</label>
+            </p>
+            <p>
+                <input type="password" name="password" required><label>Пароль</label>
+            </p>
+            <p>
+                <input type="checkbox">Оставаться в системе
+            </p>
+            <p>
+                <button type="submit">Войти</button>
+            </p>
+        </fieldset>
+    </form><br>
+    <h2 align="right">Опрос(голосование)</h2>
+        <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
+        <fieldset >
+            <legend>Как вам?</legend>
+            <p>
+                <input type="radio" value="nothing" name="survey" checked>ничего
+            </p>
+            <p>
+                <input type="radio" value="not_bad" name="survey">неплохо
+            </p>
+            <p>
+                <input type="radio" value="good" name="survey">хорошо
+            </p>
+            <p>
+                <input type="radio" value="super" name="survey">супер
+            </p>
+            <p><button type="submit">Отправить</button>
+            </p>
+            <p>
+                <input type="hidden" name="date_voite" value="2013.12.31">
+            </p>
+        </fieldset>
+    </form><br>
+    <h2>Отзыв</h2>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" style="float: left">
+        <fieldset >
+            <legend>Оставьте Ваш отзыв</legend>
+            <p>
+                <input type="text" name="name" required><label> Имя</label>
+            </p>
+            <p>
+                <input type="email" name="email" required><label> e-mail</label>
+            </p>
+            <p>
+                <textarea name="text_area" lang="ru">форма отправки
+                </textarea>
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </fieldset>
+    </form><br>
+    <h2>Отзыв</h2>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
+        <fieldset >
+            <legend>Города РБ</legend>
+            <select name="list" id="list">
+                <optgroup label="Города РБ">
+                    <option value="1">Брест</option>
+                    <option value="2">Минск</option>
+                    <option value="3">Витебск</option>
+                </optgroup>
+                <optgroup label="Города России">
+                    <option value="4">Москва</option>
+                    <option value="5">Рязань</option>
+                    <option value="6">Магадан</option>
+                </optgroup>
+            </select>
+            <button type="submit">Ok</button>
+        </fieldset>
+    </form>
 </body>
 </html>
