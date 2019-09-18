@@ -5,9 +5,9 @@
     <title>form</title>
 </head>
 <body>
-    <table border="1">
+    <table>
         <tr>
-            <td valign="top" align="center"><h2>Простая форма поиска с вариантами</h2>
+            <td valign="top"><h2>Простая форма поиска с вариантами:</h2>
                <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: left">
                  <fieldset >
                     <legend>Строка поиска</legend>
@@ -17,7 +17,7 @@
                     <label><input type="radio" name="radio_group" value="in_google" id="radio_button2">в google</label>
                 </fieldset>
                </form></td>
-            <td valign="top" align="center"><h2>Простая форма поиска с вариантами</h2>
+            <td valign="top"><h2>Простая форма поиска с вариантами:</h2>
                      <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
                         <fieldset >
                             <legend>Строка поиска</legend>
@@ -30,68 +30,41 @@
                      </form></td>
         </tr>
         <tr>
-            <td valign="top" align="center"><h2>Простая форма авторизации</h2>
+            <td valign="top"><h2 align="left">Простая форма авторизации:</h2>
                     <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: left">
                         <fieldset >
                             <legend>Авторизуйтесь</legend>
-                                <p>
-                                    <input type="text" name="login" required><label>Логин</label>
-                                </p>
-                                <p>
-                                    <input type="password" name="password" required><label>Пароль</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox">Оставаться в системе
-                                </p>
-                                <p>
-                                    <button type="submit">Войти</button>
-                                </p>
+                                <input type="text" name="login" required><label>Логин</label><br>
+                                <input type="password" name="password" required><label>Пароль</label><br>
+                                <input type="checkbox">Оставаться в системе<br>
+                                <button type="submit">Войти</button>
                         </fieldset>
                     </form></td>
-            <td valign="top" align="center"><h2>Опрос(голосование)</h2>
+            <td valign="top" align="left"><h2>Опрос(голосование):</h2>
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
-                    <fieldset >
+                    <fieldset>
                         <legend>Как вам?</legend>
-                            <p>
-                                <input type="radio" value="nothing" name="survey" checked>ничего
-                            </p>
-                            <p>
-                                <input type="radio" value="not_bad" name="survey">неплохо
-                            </p>
-                            <p>
-                                <input type="radio" value="good" name="survey">хорошо
-                            </p>
-                            <p>
-                                <input type="radio" value="super" name="survey">супер
-                            </p>
-                                <p><button type="submit">Отправить</button>
-                            </p>
-                            <p>
-                                <input type="hidden" name="date_voite" value="2013.12.31">
-                            </p>
+                            <input type="radio" value="nothing" name="survey" checked>ничего<br>
+                            <input type="radio" value="not_bad" name="survey">неплохо<br>
+                            <input type="radio" value="good" name="survey">хорошо<br>
+                            <input type="radio" value="super" name="survey">супер<br>
+                            <button type="submit">Отправить</button><br>
+                            <input type="hidden" name="date_voite" value="2013.12.31">
                     </fieldset>
                 </form></td>
         </tr>
         <tr>
-            <td valign="top" align="center"><h2>Отзыв</h2>
-                    <form action="http://fe.it-academy.by/TestForm.php" method="post" style="float: left">
-                         <fieldset >
-                            <legend>Оставьте Ваш отзыв</legend>
-                                <p>
-                                    <input type="text" name="name" required><label> Имя</label>
-                                </p>
-                                <p>
-                                     <input type="email" name="email" required><label> e-mail</label>
-                                </p>
-                                <p>
-                                    <textarea name="text_area" lang="ru">форма отправки</textarea>
-                                </p>
-                                <p>
-                                    <button type="submit">Отправить</button>
-                                </p>
-                         </fieldset>
-                    </form></td>
-            <td valign="top" align="center"><h2>Выпадающий и мульти списки</h2>
+            <td valign="top"><h2>Отзыв:</h2>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" style="float: left">
+                    <fieldset >
+                        <legend>Оставьте Ваш отзыв</legend>
+                        <input type="text" name="name" required><label> Имя</label><br>
+                        <input type="email" name="email" required><label> e-mail</label><br>
+                        <textarea name="text_area" lang="ru">форма отправки</textarea><br>
+                        <button type="submit">Отправить</button>
+                    </fieldset>
+                </form></td>
+            <td valign="top"><h2>Выпадающий и мульти списки:</h2>
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" style="float: right">
                     <fieldset >
                         <legend>Города РБ</legend>
@@ -118,9 +91,13 @@
                         <legend>Upload</legend>
                         <label>Файл:</label><br>
                         <input type="file" name="file_Field" dir="ltr" lang="en">
+                        <legend>Срок храниения (года)</legend>
+                        <input type="text" size="4">
+                        <button type="submit">Загрузить</button>
+
                     </fieldset>
                 </form></td>
-            <td valign="top"><h2>Валидация форм</h2>
+            <td valign="top"><h2>Валидация данныйх HTML5:</h2>
                     <form action="http://fe.it-academy.by/TestForm.php" method="get">
                         <fieldset>
                             <legend>Строка поиска</legend>
