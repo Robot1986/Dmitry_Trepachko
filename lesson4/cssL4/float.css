@@ -1,25 +1,18 @@
 div{
-    margin: 10px;
-    border: 2px solid black;
-    font-size: 20px;
-    height: 80px;
-    width: 500px;
-}
-#header{
-    background-color: #ccc;
-    width: 500px;
-}
-#content{
-    background-color: #ddd;
-    width: 500px;
+    border: 1px solid black;
 }
 #menu{
-    background-color: #eee;
-    height: 200px;
     float: left;
-    width: 500px;
+    background-color: red;
+    width: 200px;
 }
+#header{
+    background-color: blue;
+}
+#content{
+    background-color: green;
+}
+
 #footer{
-    background-color: #ccc;
-    width: 500px;
+    background-color: yellow;
 }
