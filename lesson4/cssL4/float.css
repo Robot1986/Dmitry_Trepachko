@@ -1,8 +1,5 @@
-div{
-    border: 1px solid black;
+body{
     margin: 20px;
-    margin-bottom: 2em;
-
 }
 .menu{
     float: left;
@@ -13,9 +10,9 @@ div{
 
 .content{
     background-color: green;
+    margin-bottom: 2em;
 }
 
 .footer{
     background-color: yellow;
-
 }
