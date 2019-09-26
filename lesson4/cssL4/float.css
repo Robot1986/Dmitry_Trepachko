@@ -4,15 +4,27 @@ body{
 .menu{
     float: left;
     background-color: red;
-    width: 200px;
+    width: 15em;
+    clear: bottom;
 
 }
 
 .content{
     background-color: green;
     margin-bottom: 2em;
+    margin-left: 15em;
+
 }
 
 .footer{
     background-color: yellow;
+}
+.img{
+    float: right;
+}
+.clear{
+    clear: both;
+    /*height: 20px;
+    background-color: black;
+     */
 }
