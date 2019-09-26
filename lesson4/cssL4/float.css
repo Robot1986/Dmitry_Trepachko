@@ -1,18 +1,21 @@
 div{
     border: 1px solid black;
+    margin: 20px;
+    margin-bottom: 2em;
+
 }
-#menu{
+.menu{
     float: left;
     background-color: red;
     width: 200px;
+
 }
-#header{
-    background-color: blue;
-}
-#content{
+
+.content{
     background-color: green;
 }
 
-#footer{
+.footer{
     background-color: yellow;
+
 }
